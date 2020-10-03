@@ -3,9 +3,13 @@ import Editor from  './Editor';
 import useLocalStorage from '../hooks/useLocalStorage'
 
 function App() {
-  const [html, setHtml] = useLocalStorage('html', '')
-  const [css, setCss] = useLocalStorage('css', '')
-  const [js, setJs] = useLocalStorage('js', '')
+  const [html, setHtml] = useState(`<div class="rectangle"><div>`, '')
+  const [css, setCss] = useState(`.rectangle{
+    width: 200px;
+    height: 100px;
+    background-color: black;
+  }`, '')
+  const [js, setJs] = useState('', '')
   const [srcDoc, setSrcDoc] = useState('')
 
   useEffect(() => {
@@ -41,7 +45,8 @@ function App() {
           onChange={setJs}
         />
       </div>
-      <div className="pane">
+      <div class="grid">
+      <div className="pane result">
         <iframe 
         srcDoc={srcDoc}
         title="output"
@@ -51,6 +56,10 @@ function App() {
         height="100%"
         />
         </div>
+      <div class="container objectifs">
+        <div id="app"></div>
+      </div>
+      </div>
     </>
   )
 }

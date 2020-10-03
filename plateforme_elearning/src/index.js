@@ -24,7 +24,6 @@ class AppContainer extends React.Component {
         <br />
         <ItemCount count={allTheThings.length} />
         <hr />
-        <AppFooter />
       </div>
     );
   }
@@ -93,16 +92,6 @@ class AppJumbotron extends React.Component {
     return (
       <div className="jumbotron">
         <h2>{this.props.title}</h2>
-      </div>
-    );
-  }
-}
-
-class AppFooter extends React.Component {
-  render (){
-    return (
-      <div className="text-muted">
-        <small>&copy; {new Date().getFullYear()}</small>
       </div>
     );
   }

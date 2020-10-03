@@ -11,6 +11,18 @@ body {
   display: flex;
 }
 
+.grid {
+  display: flex;
+}
+
+.pane.result {
+width: 70%;
+}
+
+.container.objectifs {
+  width: 30%;
+}
+
 .editor-container {
   flex-grow: 1;
   flex-basis: 0;
