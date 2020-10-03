@@ -57,3 +57,8 @@ body {
   border-bottom-left-radius: .5rem;
   overflow: hidden;
 }
+
+.jumbotron {
+  background-color: #333;
+  color: white;
+}
