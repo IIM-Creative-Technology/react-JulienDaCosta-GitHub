@@ -16,7 +16,8 @@ body {
 }
 
 .pane.result {
-width: 70%;
+  width: 70%;
+  margin-right: 10px;
 }
 
 .container.objectifs {
